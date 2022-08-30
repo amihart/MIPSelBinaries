@@ -3,6 +3,7 @@ CFLAGS=-static
 
 all:
 	mkdir tmp/
+	$(CC) src/clear.c -o bin/clear $(CFLAGS)
 	$(CC) src/texor.c -o bin/texor $(CFLAGS)
 	$(CC) src/xxd.c -o bin/xxd $(CFLAGS)
 	$(CC) src/TinyBASIC.c -o bin/TinyBASIC -lm $(CFLAGS)
